@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/AppContainer.astro";
+import MortgageCalculator from "./MortgageCalculator.svelte";
+---
+
+<Layout
+	title="Mortgage Calculator"
+	description="Calculate your monthly mortgage payments with our easy-to-use mortgage calculator. Includes principal, interest, taxes, insurance, and PMI."
+>
+    <h1 class="text-4xl font-bold mb-4 text-center">Residential Mortgage Calculator</h1>
+	<MortgageCalculator client:load />
+</Layout>

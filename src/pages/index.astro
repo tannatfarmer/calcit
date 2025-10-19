@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Every calculation, simplified.</h1>
+			<p>
+				We built clean, powerful calculators we wished existed—simple to use, honest, and no ads. Just the tools you need to make confident decisions.
+			</p>
+			
+			<p>Here are a few of our favorites:</p>
+			<ul>
+				<li><a href="/mortgage" class="text-[#2337ff] hover:underline">Residential Mortgage Calculator</a></li>
+<!-- 				<li>Unit Converter</li>
+				<li>Auto Loan Calculator</li> -->
+				<li><a href="/simple" class="text-[#2337ff] hover:underline">Simple Calculator</a></li>
+				<!-- <li>Unit Converter</li> -->
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
